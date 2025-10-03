@@ -47,7 +47,7 @@
             "default_value": "Lunar",
             "user_viewable": true,
             "user_editable": true,
-            "rules": "nullable|string|in:,Lunar,Mars2,Europa3,MimasHerschel,Vulcan,Venus",
+            "rules": "nullable|string|in:,Lunar,Mars2,Europa3,MimasHerschel,Vulcan,Vulcan2,Venus",
             "field_type": "text"
         },
         {
