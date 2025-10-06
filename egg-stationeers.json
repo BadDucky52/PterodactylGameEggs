@@ -42,7 +42,7 @@
         },
         {
             "name": "World Name",
-            "description": "Available Maps: Lunar, Mars2, Europa3, MimasHerschel, Vulcan, Venus",
+            "description": "Available Maps: Lunar, Mars2, Europa3, MimasHerschel, Vulcan2, Venus",
             "env_variable": "WORLD_NAME",
             "default_value": "Lunar",
             "user_viewable": true,
