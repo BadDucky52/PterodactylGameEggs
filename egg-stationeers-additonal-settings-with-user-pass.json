@@ -77,7 +77,7 @@
             "default_value": "DefaultStartLocation",
             "user_viewable": true,
             "user_editable": true,
-            "rules": "nullable|string|in:,DefaultStartLocation,LunarSpawnCraterVesper,LunarSpawnMontesUmbrarum,\r\nLunarSpawnCraterNox,LunarSpawnMonsArcanus,LunarSpawnRoundRobin,MarsSpawnCanyonOverlook,\nMarsSpawnButchersFlat,MarsSpawnFindersCanyon,MarsSpawnHellasCrags,MarsSpawnDonutFlats, MarsSpawnRoundRobin,\nEuropaSpawnIcyBasin,EuropaSpawnGlacialChannel,EuropaSpawnBalgatanPass,EuropaSpawnFrigidHighlands,\r\nEuropaSpawnTyreValley,EuropaSpawnRoundRobin,MimasSpawnCentralMesa,MimasSpawnHarrietCrater,\nMimasSpawnCraterField,MimasSpawnDustBowl,MimasSpawnRoundRobin,VulcanSpawnVestaValley,VulcanSpawnEtnasFury,\nVulcanSpawnIxionsDemise,VulcanSpawnTitusReach,VulcanSpawnRoundRobin,VenusSpawnGaiaValley,VenusSpawnDaisyValley,\nVenusSpawnFaithValley,VenusSpawnDuskValley,VenusSpawnRoundRobin",
+            "rules": "nullable|string|in:,DefaultStartLocation,LunarSpawnCraterVesper,LunarSpawnMontesUmbrarum,\r\nLunarSpawnCraterNox,LunarSpawnMonsArcanus,LunarSpawnRoundRobin,MarsSpawnCanyonOverlook,\nMarsSpawnButchersFlat,MarsSpawnFindersCanyon,MarsSpawnHellasCrags,MarsSpawnDonutFlats,MarsSpawnRoundRobin,\nEuropaSpawnIcyBasin,EuropaSpawnGlacialChannel,EuropaSpawnBalgatanPass,EuropaSpawnFrigidHighlands,\r\nEuropaSpawnTyreValley,EuropaSpawnRoundRobin,MimasSpawnCentralMesa,MimasSpawnHarrietCrater,\nMimasSpawnCraterField,MimasSpawnDustBowl,MimasSpawnRoundRobin,VulcanSpawnVestaValley,VulcanSpawnEtnasFury,\nVulcanSpawnIxionsDemise,VulcanSpawnTitusReach,VulcanSpawnRoundRobin,VenusSpawnGaiaValley,VenusSpawnDaisyValley,\nVenusSpawnFaithValley,VenusSpawnDuskValley,VenusSpawnRoundRobin",
             "field_type": "text"
         },
         {
