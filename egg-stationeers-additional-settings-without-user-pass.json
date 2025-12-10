@@ -67,7 +67,7 @@
             "default_value": "DefaultStart",
             "user_viewable": true,
             "user_editable": true,
-            "rules": "nullable|string|in:,DefaultStart,DefaultStartCommunity,Brutal,BrutalCommunity,\nEuropaDefault,EuropaDefaultCommunity,EuropaBrutal,EuropaBrutalCommunity,MimasDefault,MimasDefaultCommunity,MimasBrutal,MimasBrutalCommunity,VulcanDefault,VulcanDefaultCommunity,VulcanBrutal,VulcanBrutalCommunity,VenusDefault,VenusDefaultCommunity",
+            "rules": "nullable|string|in:,DefaultStart,DefaultStartCommunity,Brutal,BrutalCommunity,\nEuropaDefault,EuropaDefaultCommunity,EuropaBrutal,EuropaBrutalCommunity,MimasDefault,\nMimasDefaultCommunity,MimasBrutal,MimasBrutalCommunity,VulcanDefault,VulcanDefaultCommunity,\nVulcanBrutal,VulcanBrutalCommunity,VenusDefault,VenusDefaultCommunity",
             "field_type": "text"
         },
         {
