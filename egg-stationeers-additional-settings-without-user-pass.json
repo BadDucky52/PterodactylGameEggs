@@ -62,12 +62,12 @@
         },
         {
             "name": "Start Condition",
-            "description": "Available: DefaultStart, Brutal, EuropaDefault, EuropaBrutal, MimasDefault, MimasBrutal, VulcanDefault, VulcanBrutal, VenusDefault, (Venus brutal uses VulcanBrutal)",
+            "description": "Available: DefaultStart, DefaultCommunity, Brutal, BrutalCommmunity, EuropaDefault, EuropaDefaultCommunity, EuropaBrutal, EuropaBrutalCommunity, MimasDefault, MimasDefaultCommunity, MimasBrutal, MimasBrutalCommunity, VulcanDefault, VulcanDefaultCommunity, VulcanBrutal, VulcanBrutalCommunity VenusDefault, VenusDefaultCommunity (Venus brutal uses VulcanBrutal/VulcanBrutalCommunity)",
             "env_variable": "STARTCONDITION",
             "default_value": "DefaultStart",
             "user_viewable": true,
             "user_editable": true,
-            "rules": "nullable|string|in:,DefaultStart,Brutal,EuropaDefault,EuropaBrutal,\r\nMimasDefault,MimasBrutal,VulcanDefault,VulcanBrutal,VenusDefault",
+            "rules": "nullable|string|in:,DefaultStart,DefaultStartCommunity,Brutal,BrutalCommunity,\nEuropaDefault,EuropaDefaultCommunity,EuropaBrutal,EuropaBrutalCommunity,MimasDefault,MimasDefaultCommunity,MimasBrutal,MimasBrutalCommunity,VulcanDefault,VulcanDefaultCommunity,VulcanBrutal,VulcanBrutalCommunity,VenusDefault,VenusDefaultCommunity",
             "field_type": "text"
         },
         {
