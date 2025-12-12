@@ -15,7 +15,7 @@
         "ghcr.io\/ptero-eggs\/steamcmd:ubuntu": "ghcr.io\/ptero-eggs\/steamcmd:ubuntu"
     },
     "file_denylist": [],
-    "startup": "stty cols 80 rows 24; .\/rocketstation_DedicatedServer.x86_64  -file start \"{{SAVE_NAME}}\" {{WORLD_NAME}} {{DIFFICULTY}} {{STARTCONDITION}} {{STARTLOCATION}} -settings ServerName \"{{SERVER_NAME}}\" StartLocalHost true LocalIpAddress 0.0.0.0 ServerVisible true GamePort {{SERVER_PORT}} UpdatePort {{UPDATE_PORT}} AutoSave {{AUTOSAVE}} SaveInterval {{SAVE_INTERVAL}} ServerPassword \"{{SERVER_PASSWD}}\" ServerMaxPlayers {{MAX_PLAYERS}} UPNPEnabled {{UPNP}} ;2>&1",
+    "startup": "stty cols 80 rows 24; .\/rocketstation_DedicatedServer.x86_64  -file start \"{{SAVE_NAME}}\" {{WORLD_NAME}} {{DIFFICULTY}} {{STARTCONDITION}} {{STARTLOCATION}} -settings ServerName \"{{SERVER_NAME}}\" StartLocalHost true LocalIpAddress 0.0.0.0 ServerVisible true GamePort {{SERVER_PORT}} UpdatePort {{UPDATE_PORT}} AutoSave {{AUTOSAVE}} SaveInterval {{SAVE_INTERVAL}} ServerPassword \"{{SERVER_PASSWD}}\" AdminPassword \"{{ADMIN_PASSWD}}\" ServerAuthSecret \"{{SERVER_SECRET}}\" ServerMaxPlayers {{MAX_PLAYERS}} UPNPEnabled {{UPNP}} ;2>&1",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"Host override address provided: 0.0.0.0\"\r\n}",
@@ -94,6 +94,26 @@
             "name": "Server Password",
             "description": "",
             "env_variable": "SERVER_PASSWD",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Admin Password",
+            "description": "",
+            "env_variable": "ADMIN_PASSWD",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Server Auth Secret",
+            "description": "",
+            "env_variable": "SERVER_SECRET",
             "default_value": "",
             "user_viewable": true,
             "user_editable": true,
