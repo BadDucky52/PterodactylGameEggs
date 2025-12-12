@@ -102,7 +102,7 @@
         },
         {
             "name": "Admin Password",
-            "description": "Depracted. No longer used. Best to leave blank.",
+            "description": "Deprecated. No longer used. Best to leave blank.",
             "env_variable": "ADMIN_PASSWD",
             "default_value": "",
             "user_viewable": true,
