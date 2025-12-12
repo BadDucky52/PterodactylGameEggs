@@ -102,7 +102,7 @@
         },
         {
             "name": "Admin Password",
-            "description": "",
+            "description": "Depracted. No longer used. Best to leave blank.",
             "env_variable": "ADMIN_PASSWD",
             "default_value": "",
             "user_viewable": true,
@@ -112,7 +112,7 @@
         },
         {
             "name": "Server Auth Secret",
-            "description": "",
+            "description": "Used for server admin commands",
             "env_variable": "SERVER_SECRET",
             "default_value": "",
             "user_viewable": true,
