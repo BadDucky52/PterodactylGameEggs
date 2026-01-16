@@ -3,4 +3,4 @@ additonal settings added newer options for use with the latest update. with/with
 
 egg-stationeers is depracated. Please use one of the other two. The only difference is without-pass does not show some information on the user side of server settings. this prevents allocated users from changing server pass and keeps it within control of the admin. with-pass shows it on the panel.
 
-SSUI game egg Co-authored-by: JacksonTheMaster jakob.langisch@gmail.com
+SSUI game egg Co-authored-by: JacksonTheMaster
