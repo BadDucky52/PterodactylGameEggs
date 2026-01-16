@@ -1,0 +1,54 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2026-01-15T19:13:35-05:00",
+    "name": "Stationeers - SSUI Server Manager",
+    "author": "eggs@goover.dev",
+    "description": "Stationeers Server with SSUI Web Management",
+    "features": [
+        "steam_disk_space"
+    ],
+    "docker_images": {
+        "ghcr.io\/ptero-eggs\/steamcmd:ubuntu": "ghcr.io\/ptero-eggs\/steamcmd:ubuntu"
+    },
+    "file_denylist": [],
+    "startup": "stty cols 80 rows 24; .\/StationeersServerControl -BackendEndpointPort {{SSUI_PORT}} -GamePort {{GAME_PORT}} ;2>&1",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"SSUICLI runtime console started. Type 'help' for commands.\"\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\n# SSUI Installation Script for Pterodactyl - Downloads latest StationeersServerControl binary\r\nset -e\r\ncd \/mnt\/server\r\nLATEST_TAG=$(curl -s https:\/\/api.github.com\/repos\/SteamServerUI\/StationeersServerUI\/releases\/latest | grep '\"tag_name\":' | sed -E 's\/.*\"([^\"]+)\".*\/\\1\/')\r\nif [ -z \"$LATEST_TAG\" ]; then\r\n  echo \"Failed to fetch latest tag. Using fallback v5.10.0\"\r\n  LATEST_TAG=\"v5.10.0\"\r\nfi\r\nBINARY_NAME=\"StationeersServerControlv${LATEST_TAG#v}.x86_64\"\r\nDOWNLOAD_URL=\"https:\/\/github.com\/SteamServerUI\/StationeersServerUI\/releases\/download\/${LATEST_TAG}\/${BINARY_NAME}\"\r\necho \"Downloading latest SSUI binary: ${DOWNLOAD_URL}\"\r\ncurl -L -o \"${BINARY_NAME}\" \"${DOWNLOAD_URL}\"\r\nif [ ! -f \"${BINARY_NAME}\" ]; then\r\n  echo \"Download failed! Check URL or network.\"\r\n  exit 1\r\nfi\r\ncp \"${BINARY_NAME}\" StationeersServerControl\r\nchmod +x StationeersServerControl\r\necho \"-----------------------------------------\"\r\necho \"SSUI binary downloaded and ready as StationeersServerControl\"\r\necho \"On first start it will auto-install Stationeers files.\"\r\necho \"Web UI will be available on port 8443 (or configured port).\"\r\necho \"-----------------------------------------\"\r\n## install end\r\necho \"-----------------------------------------\"\r\necho \"Installation completed...\"\r\necho \"-----------------------------------------\"",
+            "container": "ghcr.io\/ptero-eggs\/installers:debian",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Web UI Port",
+            "description": "",
+            "env_variable": "SSUI_PORT",
+            "default_value": "8443",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:50",
+            "field_type": "text"
+        },
+        {
+            "name": "Game Port",
+            "description": "Port SSUI communicates game through Pterodactyl",
+            "env_variable": "GAME_PORT",
+            "default_value": "27016",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:50",
+            "field_type": "text"
+        }
+    ]
+}
