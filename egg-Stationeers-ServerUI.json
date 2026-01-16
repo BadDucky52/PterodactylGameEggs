@@ -5,9 +5,9 @@
         "update_url": null
     },
     "exported_at": "2026-01-15T19:13:35-05:00",
-    "name": "Stationeers - SSUI Server Manager",
-    "author": "eggs@goover.dev",
-    "description": "Stationeers Server with SSUI Web Management",
+    "name": "StationeersServerUI",
+    "author": "dev@ssui.dev",
+    "description": "StationeersServerUI offers an intuitive UI and a robust REST API for server operations, configuration management, and backup handling for your Dedicated Server.",
     "features": [
         "steam_disk_space"
     ],
@@ -32,7 +32,7 @@
     "variables": [
         {
             "name": "Web UI Port",
-            "description": "",
+            "description": "TCP Port",
             "env_variable": "SSUI_PORT",
             "default_value": "8443",
             "user_viewable": true,
@@ -42,7 +42,7 @@
         },
         {
             "name": "Game Port",
-            "description": "Port SSUI communicates game through Pterodactyl",
+            "description": "UDP Port SSUI communicates game through Pterodactyl",
             "env_variable": "GAME_PORT",
             "default_value": "27016",
             "user_viewable": true,
