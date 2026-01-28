@@ -12,7 +12,8 @@
         "steam_disk_space"
     ],
     "docker_images": {
-        "ghcr.io\/ptero-eggs\/steamcmd:ubuntu": "ghcr.io\/ptero-eggs\/steamcmd:ubuntu"
+        "ghcr.io\/ptero-eggs\/yolks:debian_trixie": "ghcr.io\/ptero-eggs\/yolks:debian_trixie",
+        "ghcr.io\/ptero-eggs\/steamcmd:debian": "ghcr.io\/ptero-eggs\/steamcmd:debian"
     },
     "file_denylist": [],
     "startup": "stty cols 80 rows 24; .\/rocketstation_DedicatedServer.x86_64  -file start \"{{SAVE_NAME}}\" {{WORLD_NAME}} {{DIFFICULTY}} {{STARTCONDITION}} {{STARTLOCATION}} -settings ServerName \"{{SERVER_NAME}}\" StartLocalHost true LocalIpAddress 0.0.0.0 ServerVisible true GamePort {{SERVER_PORT}} UpdatePort {{UPDATE_PORT}} AutoSave {{AUTOSAVE}} SaveInterval {{SAVE_INTERVAL}} ServerPassword \"{{SERVER_PASSWD}}\" AdminPassword \"{{ADMIN_PASSWD}}\" ServerAuthSecret \"{{SERVER_SECRET}}\" ServerMaxPlayers {{MAX_PLAYERS}} UPNPEnabled {{UPNP}} ;2>&1",
