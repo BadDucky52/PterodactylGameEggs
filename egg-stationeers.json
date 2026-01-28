@@ -16,7 +16,7 @@
         "ghcr.io\/ptero-eggs\/steamcmd:debian": "ghcr.io\/ptero-eggs\/steamcmd:debian"
     },
     "file_denylist": [],
-    "startup": "rm -f ./server.log && ln -s /proc/1/fd/1 \"./server.log\" && ./rocketstation_DedicatedServer.x86_64  -file start \"{{SAVE_NAME}}\" {{WORLD_NAME}} {{DIFFICULTY}} {{STARTCONDITION}} {{STARTLOCATION}} -logFile \"./server.log\" -settings ServerName \"{{SERVER_NAME}}\" StartLocalHost true LocalIpAddress 0.0.0.0 ServerVisible true GamePort {{SERVER_PORT}} UpdatePort {{UPDATE_PORT}} AutoSave {{AUTOSAVE}} SaveInterval {{SAVE_INTERVAL}} ServerPassword \"{{SERVER_PASSWD}}\" AdminPassword \"{{ADMIN_PASSWD}}\" ServerAuthSecret \"{{SERVER_SECRET}}\" ServerMaxPlayers {{MAX_PLAYERS}} UPNPEnabled {{UPNP}};",
+    "startup": "rm -f ./server.log && ln -s /proc/1/fd/1 \"./server.log\" && ./rocketstation_DedicatedServer.x86_64  -file start \"{{SAVE_NAME}}\" {{WORLD_NAME}} {{DIFFICULTY}} {{STARTCONDITION}} {{STARTLOCATION}} -logFile \"./server.log\" -settings ServerName \"{{SERVER_NAME}}\" StartLocalHost true LocalIpAddress 0.0.0.0 ServerVisible true GamePort {{SERVER_PORT}} AutoSave {{AUTOSAVE}} SaveInterval {{SAVE_INTERVAL}} ServerPassword \"{{SERVER_PASSWD}}\" AdminPassword \"{{ADMIN_PASSWD}}\" ServerAuthSecret \"{{SERVER_SECRET}}\" ServerMaxPlayers {{MAX_PLAYERS}} UPNPEnabled {{UPNP}};",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"registered with session\"\r\n}",
