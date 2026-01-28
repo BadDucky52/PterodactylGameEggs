@@ -12,7 +12,8 @@
         "steam_disk_space"
     ],
     "docker_images": {
-        "ghcr.io\/ptero-eggs\/steamcmd:ubuntu": "ghcr.io\/ptero-eggs\/steamcmd:ubuntu"
+        "ghcr.io\/ptero-eggs\/yolks:debian_trixie": "ghcr.io\/ptero-eggs\/yolks:debian_trixie",
+        "ghcr.io\/ptero-eggs\/steamcmd:debian": "ghcr.io\/ptero-eggs\/steamcmd:debian"
     },
     "file_denylist": [],
     "startup": "stty cols 80 rows 24; .\/StationeersServerControl -BackendEndpointPort {{SSUI_PORT}} -GamePort {{GAME_PORT}} ;2>&1",
