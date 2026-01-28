@@ -182,16 +182,6 @@
             "field_type": "text"
         },
         {
-            "name": "Update Port",
-            "description": "",
-            "env_variable": "UPDATE_PORT",
-            "default_value": "27014",
-            "user_viewable": true,
-            "user_editable": true,
-            "rules": "required|string|max:50",
-            "field_type": "text"
-        },
-        {
             "name": "Beta Branch",
             "description": "",
             "env_variable": "SRCDS_BETAID",
